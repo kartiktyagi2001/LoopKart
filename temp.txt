@@ -1,0 +1,15 @@
+userModel
+full name -String
+password - String
+email - String
+cart - arrya of IDs
+isAdmin ?
+contact - Number
+arders - array
+
+----------------------------
+
+product name
+Price
+Discount
+Image
