@@ -16,13 +16,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 app.set('view engine', 'ejs');
 
-app.use('/owners', ownersRouter);
-app.use('/users', usersRouter);
-app.use('/products', productsRouter);
-
 app.get('/', (req, res) => {
     res.send('ram ram!');
 });
+
+app.use('/owners', ownersRouter);
+app.use('/users', usersRouter);
+app.use('/products', productsRouter);
 
 app.listen(port, () => {
     console.log(`port ${port} is active`);
