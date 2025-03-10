@@ -13,13 +13,3 @@ product name
 Price
 Discount
 Image
-
---------------------------------------------
-
-        // let o = await ownerModel.find(); 
-
-        // if(o.length > 0) {
-        //     return res
-        //     .status(503)
-        //     .send('You cannot become an owner');
-        // }        //auth not workin(problem with db connection)
