@@ -11,9 +11,9 @@ console.log(process.env.NODE_ENV); //development environment
 // }
 
 router.post("/create", async(req, res, next) => {
-    if (process.env.NODE_ENV !== "development") {
-      return res.status(403).send("Not allowed in production");
-    }
+    // if (process.env.NODE_ENV !== "development") {
+    //   return res.status(403).send("Not allowed in production");
+    // }
 
     let owner = await ownerModel.find();
     if (owner.length > 0) {
